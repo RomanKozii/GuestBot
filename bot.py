@@ -16,7 +16,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def process_start_command(msg: types.Message):
     await bot.send_message(msg.from_user.id,'Доброго дня!\nЯ бот ресторану Roma.\nЗагялньте в меню щоб дізнзнатисьатись про мої функції', reply_markup=kb.golovna)
-    await bot.send_sticker(msg.chat.id, "CAACAgIAAxkBAAEEl5hibF5my-pCI-9yFh216zSvb5hm1AACNQADg_ioGnGqTswaDQTeJAQ")
+    await bot.send_sticker(msg.chat.id, "CAACAgIAAxkBAAEEmM1ibY9pappmGpXrOuAgvGR7BYpRGwAChxUAAj0PUEnem2b91sejvyQE")
     try:
         conn = sqlite3.connect('user.db')
         cur = conn.cursor()
